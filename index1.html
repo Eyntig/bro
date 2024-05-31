@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Authentication with HTML, CSS, JavaScript</title>
+    <link rel="stylesheet" href="index.html">
+
+    <!-- kani nga script mao ni Authentication if mo dirtso ogh index or hompage pag wala pa siya maka register or login mo dirtso siya sa
+         login or pwede pod sa inyong landing page ibutang ni ninyo sa home about contact or unsa pa-->
+    <script>
+        if(sessionStorage.getItem("c_user_email") == null){
+            location.href = "index.html";
+        }
+    </script>
+    <!-- end -->
+</head>
+<body>
+    <h1>Home</h1>
+    <p id="c-user-email"></p>
+    <button id="log-out-btn">Log Out</button>
+
+    <!-- unya kani nga script kay  arong makita ang email nga imong gi register or pwede rasad nga username 
+        lang alisdi rana ninyo ang email og username ibutang ni ninyo sa home about contact or unsa pa og function pod ni sa logout-->
+    <script src="name-logout.js"></script>
+    <!-- end -->
+</body>
+</html>
